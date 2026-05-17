@@ -1,0 +1,25 @@
+{
+  "slug": "pirros-detail-quality-compiler",
+  "company": "Detail Quality Compiler",
+  "title": "Detail Quality Compiler",
+  "thesis": "A local construction-detail quality system that checks synthetic detail libraries for reuse readiness, missing metadata, and risky documentation gaps.",
+  "dataset": [
+    "Synthetic local fixtures generated deterministically from a seed.",
+    "Typed records stored in a local DuckDB database.",
+    "Evidence identifiers preserved from ingestion through report generation.",
+    "No external services, credentials, or production data are required."
+  ],
+  "build": [
+    "Synthetic detail records with discipline, assembly, metadata, and review outcomes.",
+    "Quality scoring for reuse candidates, missing context, and documentation drift.",
+    "Evidence-backed recommendations and static dashboard output.",
+    "Offline dashboard generated as a static HTML artifact.",
+    "Evidence verifier rejects unsupported or unknown claims."
+  ],
+  "tests": [
+    "Unit tests cover the end-to-end local workflow.",
+    "Verifier tests cover unsupported and unknown evidence references.",
+    "Dashboard escaping tests cover fixture text rendered into HTML.",
+    "Benchmark: record count, runtime, artifact count, and verification status are recorded."
+  ]
+}
