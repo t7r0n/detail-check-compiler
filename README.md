@@ -2,13 +2,19 @@
 
 A local construction-detail quality system that checks synthetic detail libraries for reuse readiness, missing metadata, and risky documentation gaps.
 
-## Features
+`pirros-detail-quality-compiler` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+
+## Intent
+
+Detail Quality Compiler: From Project History to Firm-Wide Standards.
+
+## What the code proves
 
 - Synthetic detail records with discipline, assembly, metadata, and review outcomes.
 - Quality scoring for reuse candidates, missing context, and documentation drift.
 - Evidence-backed recommendations and static dashboard output.
 
-## Run Locally
+## Local run
 
 ```bash
 uv sync
@@ -23,7 +29,7 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Produced files
 
 - `outputs/dashboard.html`
 - `outputs/decision_report.md`
@@ -32,6 +38,14 @@ uv run ruff check .
 - `outputs/benchmark.md`
 - `outputs/demo_pack.md`
 
-## Data Policy
+## Gatekeeping
 
-This project runs fully locally on deterministic synthetic fixtures. It does not require external APIs, credentials, private datasets, network access, or production systems.
+```bash
+uv run ruff check .
+uv run pytest -q
+uv run app verify
+```
+
+## Operational boundary
+
+The `pirros-detail-quality-compiler` public surface is source, tests, lockfile, and docs. It does not need credentials, browser state, customer records, or hosted services.
