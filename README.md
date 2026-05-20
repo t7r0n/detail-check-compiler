@@ -3,7 +3,7 @@
 ![Detail Quality Compiler working preview](outputs/project_working.svg)
 A local construction-detail quality system that checks synthetic detail libraries for reuse readiness, missing metadata, and risky documentation gaps.
 
-`detail-check-compiler` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+`detail-quality-compiler` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
 
 ## Intent
 
@@ -49,6 +49,6 @@ uv run app verify
 
 ## Operational boundary
 
-The `detail-check-compiler` public surface is source, tests, lockfile, and docs. It does not need credentials, browser state, customer records, or hosted services.
+The `detail-quality-compiler` public surface is source, tests, lockfile, and docs. It does not need credentials, browser state, customer records, or hosted services.
 
 ![Detail Quality Compiler evidence map](outputs/evidence_map.svg)

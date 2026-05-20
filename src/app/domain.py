@@ -19,7 +19,7 @@ PRIMARY_METRIC = 'quality_score'
 PRIMARY_LABEL = 'Quality'
 CHECKS = ['near duplicate details detected', 'cross jurisdiction risky reuse flagged', 'approved typical requires reviewer evidence', 'unsupported SOP claim rejected']
 CASES = [['D-101', 'promote_standard', 'approved', True, 96, 'usage:42 defects:0 review:QA-7', 'high reuse and clean QA history'], ['D-214', 'quarantine', 'unapproved', False, 38, 'usage:18 defects:5 review:none', 'popular but unapproved with constructability notes'], ['D-307', 'block_cross_jurisdiction', 'approved', True, 44, 'jurisdiction:CA->NY code:FS-2', 'visually similar but incompatible code context'], ['F-022', 'replace', 'deprecated', True, 41, 'version:2019 duplicate:F-087', 'stale family still appears in active projects'], ['D-450', 'review', 'candidate', True, 82, 'usage:21 defects:1 reviewer:BIM-3', 'good typical candidate pending final review']]
-SLUG = 'detail-check-compiler'
+SLUG = 'detail-quality-compiler'
 
 
 class DomainCase(BaseModel):
