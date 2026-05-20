@@ -1,5 +1,5 @@
 {
-  "slug": "pirros-detail-quality-compiler",
+  "slug": "detail-check-compiler",
   "company": "Detail Quality Compiler",
   "title": "Detail Quality Compiler",
   "thesis": "A local construction-detail quality system that checks synthetic detail libraries for reuse readiness, missing metadata, and risky documentation gaps.",

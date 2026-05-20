@@ -1,5 +1,5 @@
 [project]
-name = "pirros-detail-quality-compiler"
+name = "detail-check-compiler"
 version = "0.1.0"
 description = "Detail Quality Compiler: From Project History to Firm-Wide Standards"
 requires-python = ">=3.12"
